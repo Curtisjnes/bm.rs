@@ -19,3 +19,8 @@ glob = "0.3.1"
 indoc = "2.0.4"
 owo-colors = { version = "4.0.0", features = ["supports-colors"] }
 path-absolutize = "3.1.1"
+
+# The profile that 'dist' will build with
+[profile.dist]
+inherits = "release"
+lto = "thin"
